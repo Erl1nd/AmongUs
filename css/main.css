@@ -1,0 +1,473 @@
+@font-face {
+  font-family: 'amongus_font';
+  src: url("../font/in_your_face_joffrey-webfont.woff2") format("woff2"), url("../font/in_your_face_joffrey-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'amongus_font';
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+nav {
+  background-color: rgba(24, 23, 23, 0.836);
+}
+
+nav .img-logo {
+  max-width: 35px;
+  display: inline-block;
+  margin-right: .8rem;
+  border-radius: 50%;
+}
+
+nav .navbar-brand {
+  margin-right: auto;
+  font-size: 1.7rem;
+  letter-spacing: .2rem;
+}
+
+nav .custom-toggler:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+nav .navbar-nav {
+  margin-left: auto !important;
+}
+
+nav .navbar-nav .nav-item:not(:last-child) {
+  margin-right: 1rem;
+}
+
+nav .navbar-nav .nav-link {
+  font-size: 1.2rem;
+  letter-spacing: .1rem;
+  -webkit-transition: .7s ease all;
+  transition: .7s ease all;
+}
+
+nav .navbar-nav .nav-link:hover {
+  color: #ff0000 !important;
+}
+
+#masthead {
+  height: 100vh;
+  color: white;
+  position: relative;
+}
+
+#masthead .background {
+  background-image: url("../img/masthead.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+}
+
+#masthead .background-overlay {
+  background-color: rgba(0, 0, 0, 0.726);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+#masthead .masthead-content {
+  padding-top: 14rem;
+}
+
+#masthead .masthead-content h1 {
+  font-size: 7rem;
+  -webkit-animation: txt-shadow 4s ease-in-out infinite;
+          animation: txt-shadow 4s ease-in-out infinite;
+}
+
+@-webkit-keyframes txt-shadow {
+  0% {
+    text-shadow: 0px 5px 20px #f2f2f2;
+  }
+  50% {
+    text-shadow: 0px 5px 30px #f2f2f2;
+  }
+  100% {
+    text-shadow: 0px 5px 20px #f2f2f2;
+  }
+}
+
+@keyframes txt-shadow {
+  0% {
+    text-shadow: 0px 5px 20px #f2f2f2;
+  }
+  50% {
+    text-shadow: 0px 5px 30px #f2f2f2;
+  }
+  100% {
+    text-shadow: 0px 5px 20px #f2f2f2;
+  }
+}
+
+#masthead .masthead-content h1 .img-o {
+  width: 7rem;
+  padding-bottom: 1.8rem;
+  animation: img-o-float 4s ease-in-out infinite;
+}
+
+@-webkit-keyframes img-o-float {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-15px);
+            transform: translatey(-15px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+@keyframes img-o-float {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-15px);
+            transform: translatey(-15px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+#masthead .masthead-content p {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+#masthead .masthead-content .custom-btn {
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  font-size: 1.5rem;
+  -webkit-transition: background-color .5s ease-in-out;
+  transition: background-color .5s ease-in-out;
+}
+
+#masthead .masthead-content .custom-btn a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#masthead .masthead-content .custom-btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#masthead .masthead-content .custom-btn:hover {
+  background-color: #990404;
+}
+
+#about {
+  padding-top: 5rem;
+}
+
+#about .card h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+#about .card h2::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.432);
+  width: 3rem;
+  display: block;
+  height: 5px;
+  margin: auto;
+  border-radius: 5px;
+}
+
+#about .card p {
+  text-align: justify;
+}
+
+#about .card .inner-container {
+  padding: 2rem;
+}
+
+#maps h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+#maps h2::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.432);
+  width: 3rem;
+  display: block;
+  height: 5px;
+  margin: auto;
+  border-radius: 5px;
+}
+
+#maps .card {
+  border: none;
+}
+
+#maps .card-img {
+  margin-bottom: 1rem;
+  border: none !important;
+}
+
+#maps h3 {
+  padding-top: .3rem;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  border: 1px solid black;
+  display: inline-block;
+  width: 11rem;
+  margin: auto;
+}
+
+#game-mechanics {
+  background-color: black;
+  color: white;
+}
+
+#game-mechanics h2 {
+  padding-top: 5rem;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+#game-mechanics h2::after {
+  content: "";
+  background-color: rgba(255, 252, 252, 0.644);
+  width: 3rem;
+  display: block;
+  height: 5px;
+  margin: auto;
+  border-radius: 5px;
+}
+
+#game-mechanics .first-column img {
+  width: 100%;
+  vertical-align: middle;
+  border-left: 3px solid rgba(255, 252, 252, 0.644);
+  margin-bottom: 1.5rem;
+}
+
+#game-mechanics .first-column h3 {
+  padding-top: .3rem;
+  font-size: 2rem;
+  border: 1px solid white;
+  display: block;
+  width: 11rem;
+  text-align: center;
+  margin: auto;
+}
+
+#game-mechanics .first-column ol {
+  padding-top: 2rem;
+}
+
+#game-mechanics .first-column ol li {
+  font-size: 1.5rem;
+}
+
+#wave {
+  background-color: black;
+}
+
+#wave img {
+  width: 100%;
+}
+
+#download {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+#download h1 {
+  font-size: 3rem;
+}
+
+#download h1::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.432);
+  width: 3rem;
+  display: block;
+  height: 5px;
+  margin: auto;
+  border-radius: 5px;
+}
+
+#download .btn-download {
+  font-size: 1.2rem;
+  border: 2px solid black;
+  background-color: rgba(231, 226, 226, 0.76);
+  -webkit-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out;
+  width: 18rem;
+  display: block;
+  margin: auto;
+}
+
+#download .btn-download a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#download .btn-download i {
+  margin-right: .5rem;
+}
+
+#download .btn-download:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+#download .btn-download:hover {
+  background: black;
+  color: white;
+}
+
+#footer {
+  background-color: black;
+  color: white;
+}
+
+#footer h2 {
+  font-size: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+#footer img {
+  width: 9rem;
+  margin: auto;
+  display: block;
+  padding-bottom: 1.5rem;
+}
+
+#footer p {
+  margin-bottom: 0;
+  font-size: 1.3rem;
+  padding-bottom: 3rem;
+}
+
+@media (max-width: 390px) {
+  #masthead .masthead-content h1 {
+    font-size: 5rem;
+  }
+  #masthead .masthead-content h1 .img-o {
+    width: 5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #masthead .masthead-content h1 {
+    font-size: 12rem;
+  }
+  #masthead .masthead-content h1 .img-o {
+    width: 10rem;
+    padding-bottom: 2rem;
+  }
+  #masthead .masthead-content p {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  nav .nav-link {
+    -webkit-transition: .7s ease all;
+    transition: .7s ease all;
+  }
+  nav .nav-link:hover {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  #about .card h2 {
+    font-size: 5rem;
+  }
+  #about .card p {
+    font-size: 2rem;
+  }
+  #maps h3 {
+    font-size: 3rem;
+    width: 15rem;
+  }
+  #maps h2 {
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+  }
+  #download h1 {
+    font-size: 5rem;
+  }
+  #download p {
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  nav .navbar-nav .active {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@media (min-width: 1200px) {
+  #masthead .masthead-content {
+    padding-top: 7rem;
+  }
+  #masthead .masthead-content h1 {
+    font-size: 20rem;
+  }
+  #masthead .masthead-content h1 .img-o {
+    width: 18rem;
+    padding-bottom: 4rem;
+  }
+  #maps .card-img {
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-height: 551px) {
+  #masthead .masthead-content {
+    padding-top: 10rem;
+  }
+}
+
+@media (max-height: 480px) {
+  #masthead .masthead-content {
+    padding-top: 7rem;
+  }
+}
+
+@media (max-height: 350px) {
+  #masthead .masthead-content {
+    padding-top: 5rem;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+/*# sourceMappingURL=main.css.map */
